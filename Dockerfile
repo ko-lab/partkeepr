@@ -17,6 +17,8 @@ RUN set -ex \
         libcurl4-openssl-dev \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
+        cron \
+        nano \
         libicu-dev \
         libxml2-dev \
         libpng12-dev \
