@@ -1,8 +1,8 @@
-FROM php:7-apache
+FROM php:7.1.9-apache
 
 MAINTAINER John Yeary <jyeary@bluelotussoftware.com>
 
-ENV VERSION 1.3.0
+ENV VERSION 1.2.0
 
 # defaults, overwrite via cli to customize (not used for now)
 ENV PARTKEEPR_DATABASE_HOST database
