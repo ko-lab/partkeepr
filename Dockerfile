@@ -1,9 +1,8 @@
 FROM php:7-apache
 
-# MAINTAINER Markus Hubig <mh@imko.de>
 MAINTAINER John Yeary <jyeary@bluelotussoftware.com>
 
-ENV VERSION 1.2.0
+ENV VERSION 1.3.0
 
 # defaults, overwrite via cli to customize (not used for now)
 ENV PARTKEEPR_DATABASE_HOST database
