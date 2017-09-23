@@ -2,7 +2,7 @@ FROM php:7.1.9-apache
 
 MAINTAINER John Yeary <jyeary@bluelotussoftware.com>
 
-ENV VERSION 1.2.0
+ENV VERSION 1.3.0
 
 # defaults, overwrite via cli to customize (not used for now)
 ENV PARTKEEPR_DATABASE_HOST database
@@ -34,7 +34,9 @@ RUN set -ex \
     && docker-php-ext-enable apcu \
     \
     && cd /var/www/html \
-    && curl -sL https://github.com/partkeepr/PartKeepr/releases/download/${VERSION}/partkeepr-${VERSION}.tbz2 |bsdtar --strip-components=1 -xvf- \
+    # A Release was not created with a .tbz2 extension for 1.3.0
+    # && curl -sL https://github.com/partkeepr/PartKeepr/releases/download/${VERSION}/partkeepr-${VERSION}.tbz2 |bsdtar --strip-components=1 -xvf- \
+    && curl -sL https://github.com/partkeepr/PartKeepr/archive/${VERSION}.tar.gz |bsdtar --strip-components=1 -xvf- \
     && chown -R www-data:www-data /var/www/html \
     \
     && a2enmod rewrite
