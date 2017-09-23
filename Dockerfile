@@ -1,5 +1,7 @@
 FROM php:7-apache
-MAINTAINER Markus Hubig <mh@imko.de>
+
+# MAINTAINER Markus Hubig <mh@imko.de>
+MAINTAINER John Yeary <jyeary@bluelotussoftware.com>
 
 ENV VERSION 1.2.0
 
