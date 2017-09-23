@@ -1,9 +1,10 @@
 #!/usr/bin/env make -f
 #
 # Copyright (C) 2014-2017, Markus Hubig <mh@imko.de>
+# Copyright (C) 2017 Blue Lotus Software, LLC.
 #
 
-ORG     := mhubig
+ORG     := bluelotussoftware.com
 APP     := partkeepr
 NAME    := $(ORG)/$(APP)
 BRANCH  := $(shell git rev-parse --abbrev-ref HEAD)
