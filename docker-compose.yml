@@ -2,7 +2,7 @@ version: "3"
 services:
  
   partkeepr:
-    image: mhubig/partkeepr
+    image: bluelotussoftware/docker-partkeepr
     environment:
       - PARTKEEPR_DATABASE_HOST=database  # not used for now
       - PARTKEEPR_DATABASE_NAME=partkeepr # not used for now
