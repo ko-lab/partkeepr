@@ -1,7 +1,9 @@
 ## bluelotussoftware/partkeepr docker image repository
 
-This repository is based on [mhubig/partkeepr[0] of the [`bluelotussoftware/partkeepr`][0]
-[partkeepr][2] docker image releases.
+This repository is based on [`mhubig/partkeepr`][0]. The [`bluelotussoftware/partkeepr`][0]
+[partkeepr][2] docker has been updated to use recent releases. It includes additional functionality:
+* cron
+* nano
 
 > The most recent version is: 1.3.0
 
