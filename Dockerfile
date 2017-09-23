@@ -34,9 +34,9 @@ RUN set -ex \
     && docker-php-ext-enable apcu \
     \
     && cd /var/www/html \
-    # A Release was not created with a .tbz2 extension for 1.3.0
+    # A Release was not created with a .tbz2 extension for 1.3.0 on Github.
     # && curl -sL https://github.com/partkeepr/PartKeepr/releases/download/${VERSION}/partkeepr-${VERSION}.tbz2 |bsdtar --strip-components=1 -xvf- \
-    && curl -sL https://github.com/partkeepr/PartKeepr/archive/${VERSION}.tar.gz |bsdtar --strip-components=1 -xvf- \
+    && curl -sL https://downloads.partkeepr.org/partkeepr-{$VERSION}.tbz2 |bsdtar --strip-components=1 -xvf- \
     && chown -R www-data:www-data /var/www/html \
     \
     && a2enmod rewrite
