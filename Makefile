@@ -4,7 +4,7 @@
 # Copyright (C) 2017 Blue Lotus Software, LLC.
 #
 
-ORG     := bluelotussoftware.com
+ORG     := bluelotussoftware
 APP     := partkeepr
 NAME    := $(ORG)/$(APP)
 BRANCH  := $(shell git rev-parse --abbrev-ref HEAD)
