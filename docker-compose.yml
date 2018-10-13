@@ -1,8 +1,8 @@
-version: "3"
+version: "4"
 services:
- 
+
   partkeepr:
-    image: bluelotussoftware/partkeepr
+    image: kolabspace/partkeepr
     environment:
       - PARTKEEPR_DATABASE_HOST=database  # not used for now
       - PARTKEEPR_DATABASE_NAME=partkeepr # not used for now

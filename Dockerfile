@@ -43,5 +43,6 @@ RUN set -ex \
 
 COPY php.ini /usr/local/etc/php/php.ini
 COPY apache.conf /etc/apache2/sites-available/000-default.conf
-
+COPY parameters.php /var/www/html/app/config
+RUN  chown -R www-data:www-data /var/www/html/app/config/parameters.php
 VOLUME /var/www/html/data
