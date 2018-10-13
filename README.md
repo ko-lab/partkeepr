@@ -1,4 +1,4 @@
-## bluelotussoftware/partkeepr docker image repository
+## kolabspace/partkeepr docker image repository
 
 This repository is based on the [`bluelotussoftware/partkeepr`][0]
 [partkeepr][1] docker has been updated to use recent releases. It includes additional functionality:
