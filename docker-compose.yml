@@ -13,7 +13,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - partkeepr-data:/var/www/html/data
+      - ./partkeepr-data:/var/www/html/data
     depends_on:
       - database
 
